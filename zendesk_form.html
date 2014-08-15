@@ -1,0 +1,102 @@
+<html>
+<head>
+    <style>
+        
+    form ul {
+	list-style-type:none;
+	padding-left:0px;
+	margin-top:8px;
+
+    }
+    
+    label.description {
+	border:none;
+	color:#222;
+	font-size:95%;
+	font-weight:700;
+	line-height:150%;
+	float:left;
+	padding-left:9px;
+	padding-right:9px;
+	display:inline-block;
+    }
+    
+    input.small {
+	width:300px;
+	float: left;
+    }
+    
+    textarea.med {
+        width: 500px;
+        height: 150px;
+        float: left;
+    }
+    
+    </style>
+</head>
+<body>
+<h2 style="margin-left:20px;"> Submit a Ticket </h2>
+<br>
+<div id="box_form">
+<form id="zFormer" method="POST" action="zendesk_former.php" name="former" enctype="multipart/form-data">
+    <ul>
+    <table>
+        <tr>
+        <td>
+    <li>
+        <label class="description">Your Name:
+        <input type="text" class="small" value="Your Full Name" name="z_name">
+        </label>    
+    </li>
+    </td>
+    </tr>
+         <tr>
+        <td>
+    <li>
+        <label class="description">Your Email Address:
+        <input type="text" class="small" value="john@johndoe.com" name="z_requester">
+        </label>
+    </li>
+    </td>
+         </tr>
+     <tr>
+        <td>
+    <li>
+        <label class="description"> Subject:
+        <input type="text" class="small" value="You're a subject" name="z_subject">
+        </label>
+    </li>
+     </td>
+         </tr>
+     <tr>
+        <td>
+    <li>
+        <label class="description">Description:
+        <textarea name="z_description" class="med">What's my Password Again????</textarea>
+        </label>
+    </li>
+       </td>
+         </tr>
+     <tr>
+        <td>
+              <label for="file">Filename:
+              <input type="file" name="z_file">
+               </label>
+        </td>
+     </tr>
+     <tr>
+        <td>
+    <li style="padding-top:20px;margin-left:20px;">
+        <input type="submit" value="submit" id="submitter">
+    </li>
+       </td>
+         </tr>
+    </table>
+    </ul>    
+</form>
+
+
+
+</div>
+</body>
+</html>
